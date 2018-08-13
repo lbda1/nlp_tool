@@ -1,9 +1,9 @@
 #coding=utf-8
 __author__ = 'liyang54'
-import spacy
-from spacy import displacy
+import nlp_tool.spacy
+from nlp_tool.spacy import displacy
 
-nlp = spacy.load('en')
+nlp = nlp_tool.spacy.load('en')
 doc = nlp(u'Apple is looking at buying U.K. startup for $1 billion')
 """Doc被处理 - 例如分成单独的单词和注释 - 它仍然保留原始文本的所有信息，如空格字符。
 您可以随时将令牌的偏移量转换这样，使用spaCy处理文本时就不会丢失任何信息。"""
@@ -22,10 +22,10 @@ doc = nlp(u'Apple is looking at buying U.K. startup for $1 billion')
 并且通过向系统展示足够的例子来产生在语言上进行概括的预测来产生
 - 例如，在英语之后的一个单词最有可能是一个名词。"""#coding=utf-8
 __author__ = 'liyang54'
-import spacy
-from spacy import displacy
+import nlp_tool.spacy
+from nlp_tool.spacy import displacy
 
-nlp = spacy.load('en')
+nlp = nlp_tool.spacy.load('en')
 doc = nlp(u'Apple is looking at buying U.K. startup for $1 billion')
 """Doc被处理 - 例如分成单独的单词和注释 - 它仍然保留原始文本的所有信息，如空格字符。
 您可以随时将令牌的偏移量转换这样，使用spaCy处理文本时就不会丢失任何信息。"""
